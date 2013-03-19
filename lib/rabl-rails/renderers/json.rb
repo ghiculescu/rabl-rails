@@ -6,7 +6,7 @@ module RablRails
         MultiJson.encode(hash)
       end
 
-      def resolve_cache_key(data, key)
+      def resolve_cache_key(key, data)
         "#{super}.json"
       end
     end
